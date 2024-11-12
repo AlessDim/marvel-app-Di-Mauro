@@ -1,17 +1,13 @@
 import React from 'react';
 import characters from './data/characters.json';
 import './App.css';
+import CharactersList from './components/CharactersList.jsx';
 
 function App() {
   return (
-    <>
-      <h1>Marvel Characters</h1>
-      <ul id="characters">
-        {characters.map((character, index) => (
-          <li key={index}>{character.name}</li>
-        ))}
-      </ul>
-    </>
+    <div>
+      <CharactersList characters={characters} />
+    </div>
   );
 }
 
