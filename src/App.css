@@ -91,3 +91,39 @@ nav a.active {
   color: salmon
 }
 
+
+img{
+  width: 200px;
+  height: 200px;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
+}
+=======
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: salmon
+}
+
