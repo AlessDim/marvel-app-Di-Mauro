@@ -1,7 +1,6 @@
-import React from 'react';
-
-function NumberOfCharacters({ characters }) {
-  const count = characters.length;
+function NumberOfCharacters({ characters = [] }) {
+  // Ensure characters is always an array before accessing length
+  const count = Array.isArray(characters) ? characters.length : 0;
 
   return (
     <p>
