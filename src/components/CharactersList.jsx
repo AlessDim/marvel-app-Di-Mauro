@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 function CharactersList({ characters }) {
   return (
@@ -6,9 +6,7 @@ function CharactersList({ characters }) {
       {characters.length > 0 ? (
         <ul id="characters">
           {characters.map((character) => (
-            <li key={character.id}>
-              <Link to={`/character/${character.id}`}>{character.name}</Link>  {}
-            </li>
+            <li key={character.id}>{character.name}</li>
           ))}
         </ul>
       ) : (
