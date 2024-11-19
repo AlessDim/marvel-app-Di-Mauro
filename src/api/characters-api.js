@@ -6,5 +6,8 @@ export const getCharacters = () => {
 
 export const getCharacterById = (id) => {
   const character = characters.find(character => character.id === id);
+
   return character || null;  
 };
+
+
