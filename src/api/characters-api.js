@@ -11,3 +11,6 @@ export const getCharacterById = (id) => {
 };
 
 
+=======
+  return character || null;
+};

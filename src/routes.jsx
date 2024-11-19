@@ -4,7 +4,6 @@ import CharactersPage, { loader as charactersLoader } from './pages/CharactersPa
 import ContactPage from "./pages/ContactPage";
 import CharacterDetailsPage, { loader as characterDetailLoader } from './pages/CharacterDetailsPage';
 
-
 const routes = [
     {
         path: "/",
