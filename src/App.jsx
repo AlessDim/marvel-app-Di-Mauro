@@ -1,17 +1,14 @@
-import React from 'react';
-import characters from './data/characters.json';
-import './App.css';
-import CharactersList from './components/CharactersList.jsx';
-import NumberOfCharacters from './components/NumberOfCharacters.jsx';
+import './App.css'
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import routes from './routes.jsx'
+
+const router = createBrowserRouter(routes)
 
 function App() {
   return (
-    <div>
-      <CharactersList characters={characters} />
-      <NumberOfCharacters characters={characters} />
-
-    </div>
-  );
+    <RouterProvider router={router} />
+  )
 }
 
-export default App;
+export default App
