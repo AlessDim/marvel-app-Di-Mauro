@@ -1,10 +1,11 @@
 function NumberOfCharacters({ characters = [] }) {
-  const count = characters.length;
+  // Ensure characters is always an array before accessing length
+  const count = Array.isArray(characters) ? characters.length : 0;
 
   return (
     <p>
       {count > 0 
-        ? `There ${count > 1 ? 'are' : 'is'} ${count} character${count > 1 ? 's' : ''}` 
+        ? `There is ${count} character${count > 1 ? 's' : ''}` 
         : 'There is no character'}
     </p>
   );
