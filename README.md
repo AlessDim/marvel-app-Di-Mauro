@@ -27,3 +27,4 @@ Le point d'entrée de l'application est le fichier `index.html` situé à la rac
 
 Pour lancer les test unitaires, veuillez exécuter la commande `npm run test`. Pour voir ce qui est couvert, veuillez exécuter `npm run test:coverage`.
 
+
