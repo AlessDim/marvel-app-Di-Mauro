@@ -23,3 +23,8 @@ L'application supporte le rechargement à chaud, ce qui signifie que les modific
 
 Le point d'entrée de l'application est le fichier `index.html` situé à la racine du projet. C'est ce fichier qui est chargé dans le navigateur et qui charge ensuite le fichier `main.jsx` qui est le point d'entrée de l'application React.
 
+## Test unitaires
+
+Pour lancer les test unitaires, veuillez exécuter la commande `npm run test`. Pour voir ce qui est couvert, veuillez exécuter `npm run test:coverage`.
+
+
